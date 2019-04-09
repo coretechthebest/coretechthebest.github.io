@@ -21,6 +21,10 @@
 # 
 # m h  dom mon dow   command
 
-#@reboot /home/coretech/Documenti/watch.sh
-@reboot ls /var/log/cups/page_log | entr -r /home/coretech/Documenti/awk.sh
-
+#@reboot watch -n 5 /home/coretech/Documenti/watch.sh
+54 * * * * /home/coretech/Documenti/awk.sh
+44 * * * * /home/coretech/Documenti/awk.sh
+34 * * * * /home/coretech/Documenti/awk.sh
+24 * * * * /home/coretech/Documenti/awk.sh
+14 * * * * /home/coretech/Documenti/awk.sh
+04 * * * * /home/coretech/Documenti/awk.sh
